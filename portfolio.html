@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="format.js">
+    <title>J.L</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="div fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 ">
+        <div class="container">
+            <a href="#" class="nav-brand"></a>
+            
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenuu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenuu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <!--about me element-->
+                    <a href="#aboutme" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item">
+                    <!--Prev element-->
+                    <a href="https://github.com/leejoh1008" class="nav-link">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <!--about me element-->
+                    <a href="#contact-me" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+</div>
+    <!--ME-->
+
+    <section class="bg-dark text-light p-5 text-left text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between mt-5">
+                <div>
+                    <h1><span class="text-info">Welcome to my page!</span> </h1>
+                    
+                    <p class="lead my-4">Hi, Im Johnson! As a younger student, I see potential in starting early.
+                    </p>
+                    <a href="#contact-me" class="btn btn-primary btn-md">Contact me </button>
+                    <a href="https://www.linkedin.com/in/johnson-hwang-693971209/" class="btn btn-primary bi bi-linkedin"></a>
+                    <a href="https://github.com/leejoh1008" class=" btn btn-primary bi bi-github"></a>
+                </div>
+                <img class="img-fluid w-25 d-none d-sm-block mt-5" src="me.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--blue header for ABOUT ME-->
+    <section class="bg-info text-dark p-5" id="aboutme">
+        <div class="container">
+             <div class="d-md-flex justify-content-between align-items-center">
+                 <h2 class="ml-5 mt-1 mb-md-0" ></h2>
+             </div>
+        </div>
+    </section>
+    <!--about me boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md"> 
+                    <img class="img-fluid  d-none d-md-block" src="600.jpg" alt="">
+                </div>
+                <div class="col-md"> 
+                    <div class="card bg-dark text-light" style="height: 500px;">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3 mt-4">
+                                <i class="bi bi-person-lines-fill"></i>
+                            </div>
+                            <h3 class="about-me text-light">
+                                Some Things About me
+                            </h3>
+                            <p class="card-facts text-light ">
+                                My name is Johnson Lee, I'm a 20 year old student currently enrolled at Eleven Fifty Academy graduating as a software developer in Febuary 2021. Taking a Java entry class 
+                                in high school really peeked my interest into learning more about coding, so I took the chance infront of me to develop myself career wise. If you're interested in contacting me please use
+                                the contact form down below! My current skillset mainly consists of: 
+                            </p>
+                            <ul class="abtme text-light">
+                                <li>5 years of dishwashing/kitchen prep</li>
+                                <li>2 years of customer experience/cashier</li>
+                                
+                            </ul>
+                            <!--LINK TO RESUME-->
+                            <a href="Johnson-Lee.pdf" class="btn btn-success">Download my Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark text-dark p-5" id="contact-me"></section>
+    <section class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md"> 
+                    <div class="card bg-secondary text-light" style="height: 400px;">
+                    <div class="card-body text-left">
+                    <h1><span class="text-info">Contact Me</span> </h1>
+                    <form id="fs-frm" name="form" accept-charset="utf-8" action="https://formspree.io/f/mgedenvl" method="post">
+                        <fieldset id="fs-frm-inputs">
+                          <label for="full-name">Full Name</label>
+                          <input type="text" name="name" id="full-name" placeholder="First and Last" required=""> <br>
+                          <label for="email-address">Email Address</label>
+                          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                          <br><label for="message">Message</label>
+                          <textarea rows="3" name="message" id="message" placeholder="Any messages that you would like me to know." required=""></textarea>
+                          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                      </form>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="p-5 bg-info text-dark text-center position-relative">
+        <div class="container"> 
+            <p class="lead">Copyright &copy; </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
